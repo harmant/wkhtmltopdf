@@ -34,7 +34,7 @@ GNUWIN32FILES="openssl-0.9.8h-1-lib.zip \
 openssl-0.9.8h-1-bin.zip "
 #freetype-2.3.5-1-bin.zip \
 #freetype-2.3.5-1-lib.zip "
-QTREPO=git://gitorious.org/~antialize/qt/antializes-qt.git
+QTREPO=git://gitorious.org/qt/trvrnrths-qt.git
 QTBRANCH=4.8.4
 J="$((1 + $(cat /proc/cpuinfo | grep -c processor)))"
 
@@ -182,7 +182,7 @@ EOF
 
 function packandcopylinux() {
 	mkdir -p ${BASE}/bin
-    WK=${BUILD}/linux-$1/build/wkhtmltopdf
+    WK=${BUILD}/linux-$1/wkhtmltopdf
     rm -rf  ${BASE}/bin/wkhtmltopdf-$1  ${BASE}/bin/wkhtmltoimage-$1 ${BASE}/bin/libwkhtmltopdf-$1.tar.lzma
     ${BUILD}/${UPX}/upx --best ${WK}/bin/wkhtmltopdf -o ${BASE}/bin/wkhtmltopdf-$1 || exit 1
     ${BUILD}/${UPX}/upx --best ${WK}/bin/wkhtmltoimage -o ${BASE}/bin/wkhtmltoimage-$1 || exit 1
