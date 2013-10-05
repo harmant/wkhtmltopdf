@@ -1,0 +1,13 @@
+Debian-based systems:
+
+1) Installing dependencies:
+sudo aptitude install openssl build-essential xorg libssl-dev libxrender-dev libxext-dev
+
+2) Getting the source:
+sudo aptitude install git-core
+git clone git://github.com/harmant/wkhtmltopdf.git wkhtmltopdf
+
+3) Building wkhtmltopdf:
+cd wkhtmltopdf
+chmod +x ./scripts/static-build.sh
+./scripts/static-build.sh linux-local
