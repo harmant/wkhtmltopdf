@@ -1,4 +1,4 @@
-Debian-based systems only. Tested with Ubuntu 13.04 x64 and Debian Jessie x32.
+Debian-based systems only. Tested with Ubuntu 13.04 x64 and Debian Jessie x64.
 
 1) Installing dependencies:
 sudo aptitude install openssl build-essential xorg libssl-dev libxrender-dev libxext-dev
