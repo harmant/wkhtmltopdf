@@ -1,5 +1,5 @@
-Debian-based systems only. Compiled succefully with Ubuntu Desktop 13.04 (both x32 and x64).
-Binary works nice without xserver on Debian Jessie and Ubuntu 13.04 servers (both x32 and x64).
+Debian-based systems only. Compiled succesfully with Ubuntu Desktop 13.04 (both x32 and x64).
+Binary works nice without xserver on Debian Jessie and Ubuntu 13.04 servers (both x32 and x64), libxrender1, libfontconfig must be installed.
 
 1) Installing dependencies:
 sudo aptitude install openssl build-essential xorg libssl-dev libxrender-dev libxext-dev
