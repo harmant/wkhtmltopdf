@@ -13,5 +13,5 @@ cd wkhtmltopdf
 chmod +x ./scripts/static-build.sh
 ./scripts/static-build.sh linux-local
 
-4) On production you should to install these dependenies:
+4) On production server (glibc 2.15+) you should install these dependencies:
 libxrender1, libfontconfig
