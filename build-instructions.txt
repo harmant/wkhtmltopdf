@@ -12,3 +12,6 @@ git clone git://github.com/harmant/wkhtmltopdf.git wkhtmltopdf
 cd wkhtmltopdf
 chmod +x ./scripts/static-build.sh
 ./scripts/static-build.sh linux-local
+
+4) On production you should to install these dependenies:
+libxrender1, libfontconfig
